@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoThreads | Sustainable Fashion</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="eco-header">
+        <h1><i class="fas fa-leaf"></i> EcoThreads</h1>
+        <p>Fashion that cares for the planet</p>
+    </header>
+
+    <main class="eco-main">
+        <!-- Interactive Product Showcase -->
+        <section class="eco-section" id="product-showcase">
+            <h2>Our Sustainable Collection</h2>
+            <div class="product-gallery">
+                <div class="product-card" id="product-1">
+                    <img src="https://i.pinimg.com/736x/55/7f/c4/557fc46796f9d1694ac9ded9e0ec07a4.jpg" alt="Organic Cotton Tee">
+                    <h3>Organic Cotton Tee</h3>
+                    <button class="eco-btn view-details">View Details</button>
+                </div>
+                <div class="product-card" id="product-2">
+                    <img src="https://i.pinimg.com/736x/72/13/ed/7213ede945129b68d15115254f76251e.jpg" alt="Bamboo Leggings">
+                    <h3>Bamboo Leggings</h3>
+                    <button class="eco-btn view-details">View Details</button>
+                </div>
+                <div class="product-card" id="product-3">
+                    <img src="https://i.pinimg.com/736x/94/9b/f5/949bf55ec336a7f768793593afb367ee.jpg" alt="Recycled Denim">
+                    <h3>Recycled Denim</h3>
+                    <button class="eco-btn view-details">View Details</button>
+                </div>
+            </div>
+            <div id="product-details"></div>
+        </section>
+
+        <!-- Sustainability Accordion -->
+        <section class="eco-section">
+            <h2>Our Sustainability Practices</h2>
+            <div class="eco-accordion">
+                <div class="accordion-item">
+                    <button class="accordion-btn">Materials <i class="fas fa-chevron-down"></i></button>
+                    <div class="accordion-content">
+                        <p>We use 100% organic cotton, bamboo fibers, and recycled materials to reduce environmental impact.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-btn">Production <i class="fas fa-chevron-down"></i></button>
+                    <div class="accordion-content">
+                        <p>Our factories run on renewable energy and implement water-saving techniques.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-btn">Packaging <i class="fas fa-chevron-down"></i></button>
+                    <div class="accordion-content">
+                        <p>All packaging is biodegradable or recyclable, with zero plastic used.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Impact Calculator -->
+        <section class="eco-section" id="impact-calculator">
+            <h2>Your Environmental Impact</h2>
+            <div class="calculator-box">
+                <p>Hover to see how choosing sustainable fashion makes a difference!</p>
+            </div>
+            <button id="impact-btn" class="eco-btn">Calculate My Savings</button>
+            <div id="impact-results"></div>
+        </section>
+
+        <!-- Newsletter Signup with Validation -->
+        <section class="eco-section">
+            <h2>Join Our Movement</h2>
+            <form id="newsletter-form" class="eco-form">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" placeholder="Your name">
+                    <span class="error-message"></span>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" placeholder="your.email@example.com">
+                    <span class="error-message"></span>
+                </div>
+                <div class="form-group">
+                    <label for="interest">Interest:</label>
+                    <select id="interest">
+                        <option value="">Select your interest</option>
+                        <option value="news">Product News</option>
+                        <option value="sustainability">Sustainability Tips</option>
+                        <option value="both">Both</option>
+                    </select>
+                    <span class="error-message"></span>
+                </div>
+                <button type="submit" class="eco-btn">Subscribe <i class="fas fa-leaf"></i></button>
+            </form>
+            <div id="form-success" class="success-message"></div>
+        </section>
+    </main>
+
+    <footer class="eco-footer">
+        <p>© 2025 EcoThreads. Fashion with a conscience.</p>
+        <div class="social-icons">
+            <button class="social-btn" id="secret-btn"><i class="fab fa-pagelines"></i></button>
+            <button class="social-btn"><i class="fab fa-instagram"></i></button>
+            <button class="social-btn"><i class="fab fa-twitter"></i></button>
+            <button class="social-btn"><i class="fab fa-facebook-f"></i></button>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
